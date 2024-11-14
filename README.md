@@ -33,8 +33,18 @@ docker stop core-database-initializer-alpine-mysql-client-container
 docker rm core-database-initializer-alpine-mysql-client-container
 docker rmi core-database-initializer-image
 
+docker compose -p core build backend
+docker compose -p core up -d backend
+docker compose -p core up --build -d backend
+docker compose -p core down backend
+docker start core-java-spring-boot-rest-api-container
+docker stop core-java-spring-boot-rest-api-container
+docker rm core-java-spring-boot-rest-api-container
+docker rmi core-java-spring-boot-rest-api-image
+
 docker exec -it core-database-initializer-alpine-mysql-client-container /bin/sh
 docker inspect core-database-initializer-alpine-mysql-client-container
 docker logs core-database-initializer-alpine-mysql-client-container
+docker logs core-java-spring-boot-rest-api-container
 cls
 ```

@@ -27,3 +27,11 @@ services:
     container_name: core-database-initializer-alpine-mysql-client-container
     env_file:
       - ../core-database-initializer-alpine-mysql-client/.env
+
+  backend:
+    build: ../core-java-spring-boot-rest-api
+    image: core-java-spring-boot-rest-api-image
+    container_name: core-java-spring-boot-rest-api-container
+    ports:
+      - 8080:80
+    restart: unless-stopped
