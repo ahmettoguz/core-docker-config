@@ -2,7 +2,6 @@
 
 <br>
 
-todo image gelmeli
 <div align="center">
     <img width=300 src="assets/banner/banner.png">
 </div>
