@@ -2,7 +2,7 @@ services:
   my-sql:
     build: ../core-mysql
     image: core-mysql-image
-    container_name: core-mysql-image-container
+    container_name: core-mysql-container
     volumes:
       - ../core-mysql/volume:/var/lib/mysql
     ports:
