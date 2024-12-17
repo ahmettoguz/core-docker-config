@@ -1,0 +1,37 @@
+services:
+  my-sql:
+    build: ../core-mysql
+    image: core-mysql-image
+    container_name: core-mysql-container
+    volumes:
+      - ../core-mysql/volume:/var/lib/mysql
+    ports:
+      - 3306:3306
+    env_file:
+      - ../core-mysql/.env
+    restart: unless-stopped
+
+  php-myadmin:
+    build: ../core-phpmyadmin
+    image: core-phpmyadmin-image
+    container_name: core-phpmyadmin-container
+    env_file:
+      - ../core-phpmyadmin/.env
+    ports:
+      - 3310:80
+    restart: unless-stopped
+
+  database-initializer-mysql:
+    build: ../core-database-initializer-alpine-mysql-client
+    image: core-database-initializer-alpine-mysql-client-image
+    container_name: core-database-initializer-alpine-mysql-client-container
+    env_file:
+      - ../core-database-initializer-alpine-mysql-client/.env
+
+  backend:
+    build: ../core-java-spring-boot-rest-api
+    image: core-java-spring-boot-rest-api-image
+    container_name: core-java-spring-boot-rest-api-container
+    ports:
+      - 8080:80
+    restart: unless-stopped
