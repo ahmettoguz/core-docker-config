@@ -1,16 +1,90 @@
-<h1 id="top" align="center">🚢 v1.0.0 🚢</h1> 
+<h1 id="top" align="center">Core <br/> Docker Config</h1> 
 
-<br/>
+<br>
+
+todo image gelmeli
+<div align="center">
+    <img width=300 src="assets/banner/banner.png">
+</div>
 
 ## 🔍 Table of Contents
 
-- [Service Versions](#service-versions)
+- [About Project](#intro)
+- [Technologies](#technologies)
 - [Features](#features)
-- [Next Release Features](#next-release-features)
+- [Releases](#releases)
+- [Treafik Dashboard](#traefik-dashboard)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
+- [Contributors](#contributors)
  
+<br/>
+
+<h2 id="intro">📌 About Project</h2> 
+
+This project aims to design a microarchitecture that integrates client-side and server-side components, uses Docker for containerization, enforces TLS security protocols, and configures reverse proxies.
+
+<br/>
+
+<h2 id="technologies">☄️ Technologies</h2>
+
+### DevOps
+
+&nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
+&nbsp; [![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=black)](https://traefik.io/)
+
+### Distribution
+
+&nbsp; [![ALPINE-LINUX](https://img.shields.io/badge/Alpine_Linux-0D597F?style=for-the-badge&logo=alpine-linux&logoColor=white)](https://alpinelinux.org/)
+
+### Build Tools
+
+&nbsp; [![Apache Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
+
+### ORM
+
+&nbsp; [![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)](https://hibernate.org/)
+
+### Database
+
+&nbsp; [![Mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+
+&nbsp; [![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+&nbsp; [![PHPMYADMIN](https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white)](https://www.phpmyadmin.net/)
+
+&nbsp; [![Postgresql](https://img.shields.io/badge/pgadmin-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+### Security
+
+&nbsp; [![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)](https://jwt.io/)
+
+### Web
+
+&nbsp; [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+
+&nbsp; [![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
+
+&nbsp; [![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)](https://spring.io/projects/spring-boot)
+
+&nbsp; [![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)](https://tomcat.apache.org/)
+
+&nbsp; [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)](https://swagger.io/)
+
+&nbsp; [![.Env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://www.ibm.com/docs/bg/aix/7.2?topic=files-env-file)
+
+### Test
+
+&nbsp; [![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
+
+&nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
+
+### Report
+
+&nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
+
 <br/>
 
 <h2 id="service-versions">🧩 Service Versions</h2> 
@@ -95,6 +169,22 @@
 - Remove precedence key.
 - Add Dto.
 - Implement isDeleted.
+
+
+<h2 id="releases">🚢 Releases</h2> 
+
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
+
+<h2 id="traefik-dashboard">🚥 Traefik Dashboard</h2> 
+
+todo başlangıc
+traefik gelince dashboard gelmeli
+Monitor and manage services through the Traefik dashboard.
+
+To view the dashboard visit: [`traefik`](https://sendsphere.com.tr/traefik/dashboard/#/).
+
+<img width=500 src="assets/traefik/traefikDashboard.png">
+todo bitis
 
 <br/>
 
@@ -200,5 +290,11 @@ docker compose -p core up -d backend
 docker compose -p core up --build -d backend
 docker compose -p core down backend
 ```
+
+<br/>
+
+<h2 id="contributors">👥 Contributors</h2> 
+
+<a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a> 
 
 ### [🔝](#top)
