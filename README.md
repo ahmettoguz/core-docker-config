@@ -123,12 +123,10 @@ git clone https://github.com/ahmettoguz/core-phpmyadmin
 
 <br/>
 
-#### Core Docker Config
+### Core Docker Config
 
 * Update the domain name in the `traefik-conf/traefik-dynamic.yml` file, replacing current domain name with your domain name such as `localhost`.
 * Place email address to `traefik-conf/treafik.yml`.
-
-<br/>
 
 ### Core Mocha Api Automation Test
 
@@ -142,19 +140,13 @@ git clone https://github.com/ahmettoguz/core-phpmyadmin
 npm i
 ```
 
-<br/>
-
 ### Core MySQL
 
 * Modify `.env` file for further configurations.
 
-<br/>
-
 ### Core PhpMyAdmin
 
 * Modify `.env` file for further configurations.
-
-<br/>
 
 ### Core Database Initializer Alpine MySQL Client
 
