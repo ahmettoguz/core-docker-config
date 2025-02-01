@@ -12,7 +12,7 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Releases](#releases)
-- [Portainer](#portainer-dashboard)
+- [Dashboards](#dashboards)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
@@ -94,7 +94,8 @@ This project is designed to integrate various microservice technologies, providi
 | core-java-spring-boot-rest-api                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                |
 | core-mocha-api-automation-test                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                |
 | core-database-initializer-alpine-mysql-client | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0) |
-| core-postgresql                               | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                                    |
+| core-pgadmin                                  | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-pgadmin/tree/v1.0.0)                                  |
+| core-postgresql                               | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                               |
 | core-mysql                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                    |
 | core-phpmyadmin                               | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                               |
 | core-portainer                                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                |
@@ -160,22 +161,38 @@ This project is designed to integrate various microservice technologies, providi
 + **Dark Theme Interface:** A phpMyAdmin dashboard for managing MySQL databases with a dark theme.
 + **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
+### Core pgAdmin
+
++ **Bind Mount for Persistent Data:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Bind Mount for Backup Directory:** Utilizes a bind mount for backup storage.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+
 <br/>
 
 <h2 id="releases">🚢 Releases</h2> 
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
-&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.1.0)
+&nbsp; [![.](https://img.shields.io/badge/2.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v2.0.0)
 
 <br/>
 
-<h2 id="portainer-dashboard">🐳 Portainer Dashboard</h2>
+<h2 id="dashboards">🐳 Portainer Dashboard</h2>
 
 Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
 
 <div align="center">
     <img width=800 src="assets/portainer-dashboard/portainer-dashboard.png">
+</div>
+
+<br/>
+
+<h2>🐘 pgAdmin Dashboard</h2>
+
+pgAdmin provides an intuitive web-based UI for managing PostgreSQL databases, simplifying tasks such as database administration, monitoring, and query execution. It allows users to visualize and manage databases, schemas, tables, and other database objects efficiently.
+
+<div align="center">
+    <img width=800 src="assets/pgadmin-dashboard/pgadmin-dashboard.png">
 </div>
 
 <br/>
@@ -199,6 +216,7 @@ git clone https://github.com/ahmettoguz/core-java-spring-boot-rest-api
 git clone https://github.com/ahmettoguz/core-mocha-api-automation-test
 git clone https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client
 git clone https://github.com/ahmettoguz/core-postgresql
+git clone https://github.com/ahmettoguz/core-pgadmin
 git clone https://github.com/ahmettoguz/core-mysql
 git clone https://github.com/ahmettoguz/core-phpmyadmin
 git clone https://github.com/ahmettoguz/core-portainer
@@ -219,6 +237,10 @@ npm i
 ```
 
 ### Core PostgreSQL
+
+* Modify the `.env` file using `.env.example` as a reference.
+
+### Core pgAdmin
 
 * Modify the `.env` file using `.env.example` as a reference.
 
@@ -272,6 +294,16 @@ docker compose -p core up --build -d postgresql
 docker stop                          cs-postgresql-c
 docker rm                            cs-postgresql-c
 docker logs -f                       cs-postgresql-c
+```
+
+### pgAdmin
+```
+docker compose -p core build         pgadmin
+docker compose -p core up -d         pgadmin
+docker compose -p core up --build -d pgadmin
+docker stop                          core-pgadmin-c
+docker rm                            core-pgadmin-c
+docker logs -f                       core-pgadmin-c
 ```
 
 ### MySQL
