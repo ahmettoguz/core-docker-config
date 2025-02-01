@@ -12,7 +12,7 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Releases](#releases)
-- [Treafik Dashboard](#traefik-dashboard)
+- [Dashboards](#dashboards)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
@@ -22,7 +22,7 @@
 
 <h2 id="intro">📌 About Project</h2> 
 
-This project aims to design a microarchitecture that integrates client-side and server-side components, uses Docker for containerization, enforces TLS security protocols, and configures reverse proxies.
+This project is designed to integrate various microservice technologies, providing a ready-to-use, convenient solution for deployment and management.
 
 <br/>
 
@@ -32,7 +32,7 @@ This project aims to design a microarchitecture that integrates client-side and 
 
 &nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
-&nbsp; [![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=black)](https://traefik.io/)
+&nbsp; [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white)](https://www.portainer.io/)
 
 ### Distribution
 
@@ -88,14 +88,18 @@ This project aims to design a microarchitecture that integrates client-side and 
 
 <h2 id="service-versions">🧩 Service Versions</h2> 
 
-| Service                                       | Version                                                                                                                                                                                            |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| core-docker-config                            | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)                            |
-| core-java-spring-boot-rest-api                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                |
-| core-mocha-api-automation-test                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                |
-| core-database-initializer-alpine-mysql-client | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0) |
-| core-mysql                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                    |
-| core-phpmyadmin                               | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                               |
+| Service                                            | Version                                                                                                                                                                                                 |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| core-docker-config                                 | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)                                 |
+| core-java-spring-boot-rest-api                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                     |
+| core-mocha-api-automation-test                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                     |
+| core-database-initializer-alpine-mysql-client      | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0)      |
+| core-database-initializer-alpine-postgresql-client | [![.](https://img.shields.io/badge/1.1.2-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-postgresql-client/tree/v1.1.2) |
+| core-pgadmin                                       | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-pgadmin/tree/v1.0.0)                                       |
+| core-postgresql                                    | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                                    |
+| core-mysql                                         | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                         |
+| core-phpmyadmin                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                                    |
+| core-portainer                                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                     |
 
 <br/>
 
@@ -104,6 +108,14 @@ This project aims to design a microarchitecture that integrates client-side and 
 ### Core Docker Config
 
 + **Docker-Compose Configuration:** Comprehensive Docker-Compose configuration for managing service orchestration.
+
+### Core Portainer
+
++ **Container Management:** Easily manage Docker containers, images, networks, and volumes through a user-friendly web interface.
++ **Multi-Environment Support:** Support to different Docker environments for efficient management.
++ **Stack Deployment:** Deploy and manage Docker stacks using Docker-Compose files directly from the Portainer interface.
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Java Spring Boot Rest Api
 
@@ -115,8 +127,8 @@ This project aims to design a microarchitecture that integrates client-side and 
 + **JWT Authentication:** User authentication and authorization are managed with JSON Web Tokens for secure, stateless sessions.
 + **Exceptions:** The application manages both custom and global exceptions for error handling.
 + **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
-+ **Dockerization:** The application is containerized for consistent deployment and scaling.
 + **Automated & Manual Testing:** Both automated and manual tests implemented for quality assurance.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Mocha Api Automation Test
 
@@ -126,64 +138,69 @@ This project aims to design a microarchitecture that integrates client-side and 
 - **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
 - **Comprehensive API Testing:** Tests all API endpoints for correctness.
 - **Environment Variables**: Support for environment variables to manage configurations.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Database Initializer Alpine MySQL Client
 
 + **Database Initialization:** Automatically sets up the MySQL database schema and loads seed data during container startup.
 + **Lightweight Alpine Base:** Built using an Alpine Linux base for minimal image size and faster startup.
 + **Felxibility:** Easily modify the default schema and data by updating SQL scripts in the project.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+
+### Core Database Initializer Alpine PostgreSQL Client
+
++ **Database Initialization:** Automatically sets up the PostgreSQL database schema and loads seed data during container startup.
++ **pgAdmin Backup:** Exports from pgAdmin are stored in the bind mount directory `/backup` for easy access and management.
++ **Lightweight Alpine Base:** Built using an Alpine Linux base for minimal image size and faster startup.
++ **Felxibility:** Easily modify the default schema and data by updating SQL scripts in the project.
 + **Docker Containerization:** The application is containerized for consistent deployment and scaling.
+
+### Core PostgreSQL
+
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core MySQL
 
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
-+ **Persistent Data:** Uses a volume to store MySQL data for reliability and consistency across restarts.
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core PhpMyAdmin
 
 + **Dark Theme Interface:** A phpMyAdmin dashboard for managing MySQL databases with a dark theme.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+
+### Core pgAdmin
+
++ **Bind Mount for Persistent Data:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Bind Mount for Backup Directory:** Utilizes a bind mount for backup storage.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 <br/>
 
-<h2 id="next-release-features">🚧 Next Release Features</h2>
-
-### Core Docker Config
-
-+ **Centralized TLS Security:** Centralized TLS certificate configuration across all services.
-+ **Auto-Renewal of Trusted TLS Certificates:** Automatic renewal of trusted TLS certificates to ensure uninterrupted security in production environments.
-+ **Trusted TLS Certificates:** Secure communication between services using trusted SSL certificates managed by Traefik for production environment.
-+ **Self-Signed TLS Certificates:** Secure communication between services using self-signed SSL certificates managed by Traefik for local development.
-+ **Traefik Integration:** Traefik integrated for networking.
-+ **Traefik Load Balancing:** Load balancing configured through Traefik for improved scalability and also local service development.
-+ **Traefik Router:** Routing configured through Traefik for service communication without exposing port to public.
-+ **Traefik Dashboard:** Dashboard integrated for monitoring and managing Traefik services, routers and prefixes.
-+ **www to non-www Routing:** Traefik configured to handle routing from the 'www' subdomain to the non-www domain.
-+ **Path Routing:** Traefik configured for path-based routing, directing traffic based on URL paths to specific services.
-
-### Core Java Spring Boot Rest Api
-
-- PostgreSQL integration.
-- Plain response.
-- Remove precedence key.
-- Add Dto.
-- Implement isDeleted.
-
-
 <h2 id="releases">🚢 Releases</h2> 
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
-<h2 id="traefik-dashboard">🚥 Traefik Dashboard</h2> 
+<br/>
 
-todo başlangıc
-traefik gelince dashboard gelmeli
-Monitor and manage services through the Traefik dashboard.
+<h2 id="dashboards">🐳 Portainer Dashboard</h2>
 
-To view the dashboard visit: [`traefik`](https://sendsphere.com.tr/traefik/dashboard/#/).
+Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
 
-<img width=500 src="assets/traefik/traefikDashboard.png">
-todo bitis
+<div align="center">
+    <img width=800 src="assets/portainer-dashboard/portainer-dashboard.png">
+</div>
+
+<br/>
+
+<h2>🐘 pgAdmin Dashboard</h2>
+
+pgAdmin provides an intuitive web-based UI for managing PostgreSQL databases, simplifying tasks such as database administration, monitoring, and query execution. It allows users to visualize and manage databases, schemas, tables, and other database objects efficiently.
+
+<div align="center">
+    <img width=800 src="assets/pgadmin-dashboard/pgadmin-dashboard.png">
+</div>
 
 <br/>
 
@@ -191,7 +208,6 @@ todo bitis
 
 | Service            | URL                                                        |
 |--------------------|------------------------------------------------------------|
-| Traefik Dashboard  | https://coreapp.com.tr/traefik/dashboard/#/                |
 | Backend Swagger UI | https://coreapp.com.tr/backend/sw/swagger-ui/index.html    |
 
 <br/>
@@ -206,16 +222,15 @@ git clone https://github.com/ahmettoguz/core-docker-config
 git clone https://github.com/ahmettoguz/core-java-spring-boot-rest-api
 git clone https://github.com/ahmettoguz/core-mocha-api-automation-test
 git clone https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client
+git clone https://github.com/ahmettoguz/core-database-initializer-alpine-postgresql-client
+git clone https://github.com/ahmettoguz/core-postgresql
+git clone https://github.com/ahmettoguz/core-pgadmin
 git clone https://github.com/ahmettoguz/core-mysql
 git clone https://github.com/ahmettoguz/core-phpmyadmin
+git clone https://github.com/ahmettoguz/core-portainer
 ```
 
 <br/>
-
-### Core Docker Config
-
-* Update the domain name in the `traefik-conf/traefik-dynamic.yml` file, replacing current domain name with your domain name such as `localhost`.
-* Place email address to `traefik-conf/treafik.yml`.
 
 ### Core Mocha Api Automation Test
 
@@ -229,6 +244,14 @@ git clone https://github.com/ahmettoguz/core-phpmyadmin
 npm i
 ```
 
+### Core PostgreSQL
+
+* Modify the `.env` file using `.env.example` as a reference.
+
+### Core pgAdmin
+
+* Modify the `.env` file using `.env.example` as a reference.
+
 ### Core MySQL
 
 * Modify `.env` file for further configurations.
@@ -241,6 +264,12 @@ npm i
 
 * Start the database.
 * Modify the `.env` file to configure database credentials, host and database name.
+* Replace the `init.sql` file with your custom SQL script to initialize the database schema and seed data.
+
+### Core Database Initializer Alpine PostgreSQL Client
+
+* Start the database.
+* Modify the `.env` file using `.env.example` as a reference.
 * Replace the `init.sql` file with your custom SQL script to initialize the database schema and seed data.
 
 <br/>
@@ -263,31 +292,99 @@ npm i
   
 <h2 id="system-startup">🚀 System Startup</h2>
 
+### Stack
 ```
 docker compose -p core build
 docker compose -p core up -d
 docker compose -p core up -d --build
 docker compose -p core down
+```
 
-docker compose -p core build my-sql
-docker compose -p core up -d my-sql
+### PostgreSQL
+```
+docker compose -p core build         postgresql
+docker compose -p core up -d         postgresql
+docker compose -p core up --build -d postgresql
+docker stop                          cs-postgresql-c
+docker rm                            cs-postgresql-c
+docker logs -f                       cs-postgresql-c
+```
+
+### pgAdmin
+```
+docker compose -p core build         pgadmin
+docker compose -p core up -d         pgadmin
+docker compose -p core up --build -d pgadmin
+docker stop                          core-pgadmin-c
+docker rm                            core-pgadmin-c
+docker logs -f                       core-pgadmin-c
+```
+
+### PostgreSQL DB Initializer
+```
+docker compose -p core build         database-initializer-postgresql
+docker compose -p core up -d         database-initializer-postgresql
+docker compose -p core up --build -d database-initializer-postgresql
+docker stop                          core-database-initializer-postgresql-c
+docker rm                            core-database-initializer-postgresql-c
+docker logs -f                       core-database-initializer-postgresql-c
+```
+
+### MySQL
+```
+docker compose -p core build         my-sql
+docker compose -p core up -d         my-sql
 docker compose -p core up --build -d my-sql
-docker compose -p core down my-sql
+docker stop                          core-my-sql-c
+docker rm                            core-my-sql-c
+docker logs -f                       core-my-sql-c
+```
 
-docker compose -p core build php-myadmin
-docker compose -p core up -d php-myadmin
-docker compose -p core up --build -d php-myadmin
-docker compose -p core down php-myadmin
+### PhpMyadmin 
+```
+docker compose -p core build         core-php-myadmin
+docker compose -p core up -d         core-php-myadmin
+docker compose -p core up --build -d core-php-myadmin
+docker stop                          core-php-myadmin-c
+docker rm                            core-php-myadmin-c
+docker logs -f                       core-php-myadmin-c
+```
 
-docker compose -p core build database-initializer-mysql
-docker compose -p core up -d database-initializer-mysql
+### MySQL DB Initializer
+```
+docker compose -p core build         database-initializer-mysql
+docker compose -p core up -d         database-initializer-mysql
 docker compose -p core up --build -d database-initializer-mysql
-docker compose -p core down database-initializer-mysql
+docker stop                          core-database-initializer-mysql-c
+docker rm                            core-database-initializer-mysql-c
+docker logs -f                       core-database-initializer-mysql-c
+```
 
-docker compose -p core build backend
-docker compose -p core up -d backend
+### Backend
+```
+docker compose -p core build         backend
+docker compose -p core up -d         backend
 docker compose -p core up --build -d backend
-docker compose -p core down backend
+docker stop                          core-backend-c
+docker rm                            core-backend-c
+docker logs -f                       core-backend-c
+```
+
+
+### Portainer 
+```
+docker compose -p core build         portainer
+docker compose -p core up -d         portainer
+docker compose -p core up --build -d portainer
+docker stop                          core-portainer-c
+docker rm                            core-portainer-c
+docker logs -f                       core-portainer-c
+```
+
+### Monitor & Inspect
+```
+docker exec -it core-backend-c /bin/sh
+docker inspect core-backend-c
 ```
 
 <br/>
