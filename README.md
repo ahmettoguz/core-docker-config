@@ -182,8 +182,6 @@ This project is designed to integrate various microservice technologies, providi
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
-&nbsp; [![.](https://img.shields.io/badge/2.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v2.0.0)
-
 <br/>
 
 <h2 id="dashboards">🐳 Portainer Dashboard</h2>
