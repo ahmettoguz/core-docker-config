@@ -174,17 +174,6 @@ This project aims to design a microarchitecture that integrates client-side and 
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
-<h2 id="traefik-dashboard">🚥 Traefik Dashboard</h2> 
-
-todo başlangıc
-traefik gelince dashboard gelmeli
-Monitor and manage services through the Traefik dashboard.
-
-To view the dashboard visit: [`traefik`](https://sendsphere.com.tr/traefik/dashboard/#/).
-
-<img width=500 src="assets/traefik/traefikDashboard.png">
-todo bitis
-
 <br/>
 
 <h2 id="system-links">🔗 System Links</h2> 
