@@ -280,5 +280,12 @@ docker compose -p core up --build -d portainer
 docker stop                          core-portainer-c
 docker rm                            core-portainer-c
 docker logs -f                       core-portainer-c
-cls
 ```
+
+<br/>
+
+<h2 id="contributors">👥 Contributors</h2> 
+
+<a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a> 
+
+### [🔝](#top)
