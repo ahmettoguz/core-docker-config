@@ -94,6 +94,7 @@ This project is designed to integrate various microservice technologies, providi
 | core-java-spring-boot-rest-api                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                |
 | core-mocha-api-automation-test                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                |
 | core-database-initializer-alpine-mysql-client | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0) |
+| core-postgresql                               | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                                    |
 | core-mysql                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                    |
 | core-phpmyadmin                               | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                               |
 | core-portainer                                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                |
@@ -197,6 +198,7 @@ git clone https://github.com/ahmettoguz/core-docker-config
 git clone https://github.com/ahmettoguz/core-java-spring-boot-rest-api
 git clone https://github.com/ahmettoguz/core-mocha-api-automation-test
 git clone https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client
+git clone https://github.com/ahmettoguz/core-postgresql
 git clone https://github.com/ahmettoguz/core-mysql
 git clone https://github.com/ahmettoguz/core-phpmyadmin
 git clone https://github.com/ahmettoguz/core-portainer
@@ -215,6 +217,10 @@ git clone https://github.com/ahmettoguz/core-portainer
 ```
 npm i
 ```
+
+### Core PostgreSQL
+
+* Modify the `.env` file using `.env.example` as a reference.
 
 ### Core MySQL
 
