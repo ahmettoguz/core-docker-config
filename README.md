@@ -10,8 +10,8 @@
 
 - [About Project](#intro)
 - [Technologies](#technologies)
-- [Features](#features)
 - [Releases](#releases)
+- [Features](#features)
 - [Dashboards](#dashboards)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
@@ -83,6 +83,12 @@ This project is designed to integrate various microservice technologies, providi
 ### Report
 
 &nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
+
+<br/>
+
+<h2 id="releases">🚢 Releases</h2> 
+
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
 <br/>
 
@@ -175,12 +181,6 @@ This project is designed to integrate various microservice technologies, providi
 + **Bind Mount for Persistent Data:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
 + **Bind Mount for Backup Directory:** Utilizes a bind mount for backup storage.
 + **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
-
-<br/>
-
-<h2 id="releases">🚢 Releases</h2> 
-
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
 <br/>
 
