@@ -12,6 +12,21 @@ services:
       - ../core-postgresql/.env
     restart: unless-stopped
 
+  pgadmin:
+    build: ../core-pgadmin
+    image: core-pgadmin-c
+    container_name: core-pgadmin-c
+    volumes:
+      - ../core-pgadmin/volume:/var/lib/pgadmin
+      - ../core-database-initializer-alpine-postgresql-client/backup:/var/lib/pgadmin/storage
+    env_file:
+      - ../core-pgadmin/.env
+    ports:
+      - 9001:80
+    restart: unless-stopped
+    depends_on:
+      - postgresql
+
   my-sql:
     build: ../core-mysql
     image: core-my-sql-i
