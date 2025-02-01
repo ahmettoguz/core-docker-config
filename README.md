@@ -111,8 +111,8 @@ This project is designed to integrate various microservice technologies, providi
 + **Container Management:** Easily manage Docker containers, images, networks, and volumes through a user-friendly web interface.
 + **Multi-Environment Support:** Support to different Docker environments for efficient management.
 + **Stack Deployment:** Deploy and manage Docker stacks using Docker-Compose files directly from the Portainer interface.
-+ **Bind Mounts:** Use bind mounts to map host directories into containers for persistent data storage and easy host file access.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Java Spring Boot Rest Api
 
@@ -125,7 +125,7 @@ This project is designed to integrate various microservice technologies, providi
 + **Exceptions:** The application manages both custom and global exceptions for error handling.
 + **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
 + **Automated & Manual Testing:** Both automated and manual tests implemented for quality assurance.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Mocha Api Automation Test
 
@@ -135,24 +135,29 @@ This project is designed to integrate various microservice technologies, providi
 - **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
 - **Comprehensive API Testing:** Tests all API endpoints for correctness.
 - **Environment Variables**: Support for environment variables to manage configurations.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Database Initializer Alpine MySQL Client
 
 + **Database Initialization:** Automatically sets up the MySQL database schema and loads seed data during container startup.
 + **Lightweight Alpine Base:** Built using an Alpine Linux base for minimal image size and faster startup.
 + **Felxibility:** Easily modify the default schema and data by updating SQL scripts in the project.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+
+### Core PostgreSQL
+
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core MySQL
 
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
-+ **Persistent Data:** Uses a volume to store MySQL data for reliability and consistency across restarts.
++ **Bind Mount:** Leverages Docker bind-mounts to store data on the host machine, ensuring data persistence, reliability, and consistency across container restarts or updates.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core PhpMyAdmin
 
 + **Dark Theme Interface:** A phpMyAdmin dashboard for managing MySQL databases with a dark theme.
-+ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
++ **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 <br/>
 
@@ -253,6 +258,16 @@ docker compose -p core up -d --build
 docker compose -p core down
 ```
 
+### Postgresql
+```
+docker compose -p core build         postgresql
+docker compose -p core up -d         postgresql
+docker compose -p core up --build -d postgresql
+docker stop                          cs-postgresql-c
+docker rm                            cs-postgresql-c
+docker logs -f                       cs-postgresql-c
+```
+
 ### MySQL
 ```
 docker compose -p core build         my-sql
@@ -304,7 +319,7 @@ docker rm                            core-portainer-c
 docker logs -f                       core-portainer-c
 ```
 
-### Inspect
+### Monitor & Inspect
 ```
 docker exec -it core-backend-c /bin/sh
 docker inspect core-backend-c
