@@ -304,8 +304,8 @@ docker logs -f                       core-portainer-c
 
 ### Inspect
 ```
-docker exec -it core-database-initializer-alpine-mysql-client-container /bin/sh
-docker inspect core-database-initializer-alpine-mysql-client-container
+docker exec -it core-backend-c /bin/sh
+docker inspect core-backend-c
 ```
 
 <br/>
