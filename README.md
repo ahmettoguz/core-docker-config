@@ -12,6 +12,7 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Releases](#releases)
+- [Portainer](#portainer-dashboard)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
@@ -21,7 +22,7 @@
 
 <h2 id="intro">📌 About Project</h2> 
 
-This project aims to design a microarchitecture that integrates client-side and server-side components, uses Docker for containerization, enforces TLS security protocols, and configures reverse proxies.
+This project is designed to integrate various microservice technologies, providing a ready-to-use, convenient solution for deployment and management.
 
 <br/>
 
@@ -30,6 +31,8 @@ This project aims to design a microarchitecture that integrates client-side and 
 ### DevOps
 
 &nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
+&nbsp; [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white)](https://www.portainer.io/)
 
 ### Distribution
 
@@ -93,6 +96,7 @@ This project aims to design a microarchitecture that integrates client-side and 
 | core-database-initializer-alpine-mysql-client | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0) |
 | core-mysql                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                    |
 | core-phpmyadmin                               | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                               |
+| core-portainer                                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=4A154B&color=233838)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                |
 
 <br/>
 
@@ -101,6 +105,7 @@ This project aims to design a microarchitecture that integrates client-side and 
 ### Core Docker Config
 
 + **Docker-Compose Configuration:** Comprehensive Docker-Compose configuration for managing service orchestration.
++ **Portainer Integration:** Simplified management and visualization of Docker containers and services through the Portainer dashboard.
 
 ### Core Java Spring Boot Rest Api
 
@@ -162,6 +167,14 @@ This project aims to design a microarchitecture that integrates client-side and 
 <h2 id="releases">🚢 Releases</h2> 
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
+
+<br/>
+
+<h2 id="portainer-dashboard">🐳 Portainer Dashboard</h2>
+
+Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
+
+<img width=500 src="assets/portainer-dashboard/portainer-dashboard.png">
 
 <br/>
 
