@@ -12,7 +12,6 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Releases](#releases)
-- [Treafik Dashboard](#traefik-dashboard)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
@@ -31,8 +30,6 @@ This project aims to design a microarchitecture that integrates client-side and 
 ### DevOps
 
 &nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-
-&nbsp; [![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=black)](https://traefik.io/)
 
 ### Distribution
 
@@ -152,14 +149,6 @@ This project aims to design a microarchitecture that integrates client-side and 
 
 + **Centralized TLS Security:** Centralized TLS certificate configuration across all services.
 + **Auto-Renewal of Trusted TLS Certificates:** Automatic renewal of trusted TLS certificates to ensure uninterrupted security in production environments.
-+ **Trusted TLS Certificates:** Secure communication between services using trusted SSL certificates managed by Traefik for production environment.
-+ **Self-Signed TLS Certificates:** Secure communication between services using self-signed SSL certificates managed by Traefik for local development.
-+ **Traefik Integration:** Traefik integrated for networking.
-+ **Traefik Load Balancing:** Load balancing configured through Traefik for improved scalability and also local service development.
-+ **Traefik Router:** Routing configured through Traefik for service communication without exposing port to public.
-+ **Traefik Dashboard:** Dashboard integrated for monitoring and managing Traefik services, routers and prefixes.
-+ **www to non-www Routing:** Traefik configured to handle routing from the 'www' subdomain to the non-www domain.
-+ **Path Routing:** Traefik configured for path-based routing, directing traffic based on URL paths to specific services.
 
 ### Core Java Spring Boot Rest Api
 
@@ -180,7 +169,6 @@ This project aims to design a microarchitecture that integrates client-side and 
 
 | Service            | URL                                                        |
 |--------------------|------------------------------------------------------------|
-| Traefik Dashboard  | https://coreapp.com.tr/traefik/dashboard/#/                |
 | Backend Swagger UI | https://coreapp.com.tr/backend/sw/swagger-ui/index.html    |
 
 <br/>
@@ -200,11 +188,6 @@ git clone https://github.com/ahmettoguz/core-phpmyadmin
 ```
 
 <br/>
-
-### Core Docker Config
-
-* Update the domain name in the `traefik-conf/traefik-dynamic.yml` file, replacing current domain name with your domain name such as `localhost`.
-* Place email address to `traefik-conf/treafik.yml`.
 
 ### Core Mocha Api Automation Test
 
