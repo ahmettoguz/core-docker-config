@@ -1,4 +1,17 @@
 services:
+
+  postgresql:
+    build: ../core-postgresql
+    image: core-postgresql-i
+    container_name: core-postgresql-c
+    volumes:
+      - ../core-postgresql/volume:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    env_file:
+      - ../core-postgresql/.env
+    restart: unless-stopped
+
   my-sql:
     build: ../core-mysql
     image: core-my-sql-i
