@@ -258,7 +258,7 @@ docker compose -p core up -d --build
 docker compose -p core down
 ```
 
-### Postgresql
+### PostgreSQL
 ```
 docker compose -p core build         postgresql
 docker compose -p core up -d         postgresql
