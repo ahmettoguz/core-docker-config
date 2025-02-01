@@ -88,17 +88,18 @@ This project is designed to integrate various microservice technologies, providi
 
 <h2 id="service-versions">🧩 Service Versions</h2> 
 
-| Service                                       | Version                                                                                                                                                                                            |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| core-docker-config                            | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)                            |
-| core-java-spring-boot-rest-api                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                |
-| core-mocha-api-automation-test                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                |
-| core-database-initializer-alpine-mysql-client | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0) |
-| core-pgadmin                                  | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-pgadmin/tree/v1.0.0)                                  |
-| core-postgresql                               | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                               |
-| core-mysql                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                    |
-| core-phpmyadmin                               | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                               |
-| core-portainer                                | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                |
+| Service                                            | Version                                                                                                                                                                                                 |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| core-docker-config                                 | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)                                 |
+| core-java-spring-boot-rest-api                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-java-spring-boot-rest-api/tree/v1.0.0)                     |
+| core-mocha-api-automation-test                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)                     |
+| core-database-initializer-alpine-mysql-client      | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client/tree/v1.0.0)      |
+| core-database-initializer-alpine-postgresql-client | [![.](https://img.shields.io/badge/1.1.2-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-database-initializer-alpine-postgresql-client/tree/v1.1.2) |
+| core-pgadmin                                       | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-pgadmin/tree/v1.0.0)                                       |
+| core-postgresql                                    | [![.](https://img.shields.io/badge/1.3.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-postgresql/tree/v1.3.0)                                    |
+| core-mysql                                         | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                         |
+| core-phpmyadmin                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                                    |
+| core-portainer                                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                     |
 
 <br/>
 
@@ -145,6 +146,14 @@ This project is designed to integrate various microservice technologies, providi
 + **Lightweight Alpine Base:** Built using an Alpine Linux base for minimal image size and faster startup.
 + **Felxibility:** Easily modify the default schema and data by updating SQL scripts in the project.
 + **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
+
+### Core Database Initializer Alpine PostgreSQL Client
+
++ **Database Initialization:** Automatically sets up the PostgreSQL database schema and loads seed data during container startup.
++ **pgAdmin Backup:** Exports from pgAdmin are stored in the bind mount directory `/backup` for easy access and management.
++ **Lightweight Alpine Base:** Built using an Alpine Linux base for minimal image size and faster startup.
++ **Felxibility:** Easily modify the default schema and data by updating SQL scripts in the project.
++ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 
 ### Core PostgreSQL
 
@@ -215,6 +224,7 @@ git clone https://github.com/ahmettoguz/core-docker-config
 git clone https://github.com/ahmettoguz/core-java-spring-boot-rest-api
 git clone https://github.com/ahmettoguz/core-mocha-api-automation-test
 git clone https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client
+git clone https://github.com/ahmettoguz/core-database-initializer-alpine-postgresql-client
 git clone https://github.com/ahmettoguz/core-postgresql
 git clone https://github.com/ahmettoguz/core-pgadmin
 git clone https://github.com/ahmettoguz/core-mysql
@@ -256,6 +266,12 @@ npm i
 
 * Start the database.
 * Modify the `.env` file to configure database credentials, host and database name.
+* Replace the `init.sql` file with your custom SQL script to initialize the database schema and seed data.
+
+### Core Database Initializer Alpine PostgreSQL Client
+
+* Start the database.
+* Modify the `.env` file using `.env.example` as a reference.
 * Replace the `init.sql` file with your custom SQL script to initialize the database schema and seed data.
 
 <br/>
@@ -306,6 +322,16 @@ docker rm                            core-pgadmin-c
 docker logs -f                       core-pgadmin-c
 ```
 
+### PostgreSQL DB Initializer
+```
+docker compose -p core build         database-initializer-postgresql
+docker compose -p core up -d         database-initializer-postgresql
+docker compose -p core up --build -d database-initializer-postgresql
+docker stop                          core-database-initializer-postgresql-c
+docker rm                            core-database-initializer-postgresql-c
+docker logs -f                       core-database-initializer-postgresql-c
+```
+
 ### MySQL
 ```
 docker compose -p core build         my-sql
@@ -328,12 +354,12 @@ docker logs -f                       core-php-myadmin-c
 
 ### MySQL DB Initializer
 ```
-docker compose -p core build         db-init-mysql
-docker compose -p core up -d         db-init-mysql
-docker compose -p core up --build -d db-init-mysql
-docker stop                          core-db-init-mysql-c
-docker rm                            core-db-init-mysql-c
-docker logs -f                       core-db-init-mysql-c
+docker compose -p core build         database-initializer-mysql
+docker compose -p core up -d         database-initializer-mysql
+docker compose -p core up --build -d database-initializer-mysql
+docker stop                          core-database-initializer-mysql-c
+docker rm                            core-database-initializer-mysql-c
+docker logs -f                       core-database-initializer-mysql-c
 ```
 
 ### Backend
