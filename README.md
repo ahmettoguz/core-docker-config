@@ -148,22 +148,6 @@ This project is designed to integrate various microservice technologies, providi
 
 <br/>
 
-<h2 id="next-release-features">🚧 Next Release Features</h2>
-
-### Core Docker Config
-
-+ **Centralized TLS Security:** Centralized TLS certificate configuration across all services.
-+ **Auto-Renewal of Trusted TLS Certificates:** Automatic renewal of trusted TLS certificates to ensure uninterrupted security in production environments.
-
-### Core Java Spring Boot Rest Api
-
-- PostgreSQL integration.
-- Plain response.
-- Remove precedence key.
-- Add Dto.
-- Implement isDeleted.
-
-
 <h2 id="releases">🚢 Releases</h2> 
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
@@ -174,7 +158,9 @@ This project is designed to integrate various microservice technologies, providi
 
 Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
 
-<img width=500 src="assets/portainer-dashboard/portainer-dashboard.png">
+<div align="center">
+    <img width=800 src="assets/portainer-dashboard/portainer-dashboard.png">
+</div>
 
 <br/>
 
@@ -198,6 +184,7 @@ git clone https://github.com/ahmettoguz/core-mocha-api-automation-test
 git clone https://github.com/ahmettoguz/core-database-initializer-alpine-mysql-client
 git clone https://github.com/ahmettoguz/core-mysql
 git clone https://github.com/ahmettoguz/core-phpmyadmin
+git clone https://github.com/ahmettoguz/core-portainer
 ```
 
 <br/>
