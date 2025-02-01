@@ -288,6 +288,13 @@ docker compose -p core build backend
 docker compose -p core up -d backend
 docker compose -p core up --build -d backend
 docker compose -p core down backend
+
+docker compose -p core build         portainer
+docker compose -p core up -d         portainer
+docker compose -p core up --build -d portainer
+docker stop                          core-portainer-c
+docker rm                            core-portainer-c
+docker logs -f                       core-portainer-c
 ```
 
 <br/>
