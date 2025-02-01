@@ -27,6 +27,14 @@ services:
     depends_on:
       - postgresql
 
+    
+  database-initializer-postgresql:
+    build: ../core-database-initializer-alpine-postgresql-client
+    image: core-database-initializer-i
+    container_name: core-database-initializer-c
+    env_file:
+      - ../core-database-initializer-alpine-postgresql-client/.env
+
   my-sql:
     build: ../core-mysql
     image: core-my-sql-i
@@ -49,10 +57,10 @@ services:
       - 3310:80
     restart: unless-stopped
 
-  db-init-mysql:
+  database-initializer-mysql:
     build: ../core-database-initializer-alpine-mysql-client
-    image: core-db-init-mysql-i
-    container_name: core-db-init-mysql-c
+    image: core-database-initializer-mysql-i
+    container_name: core-database-initializer-mysql-c
     env_file:
       - ../core-database-initializer-alpine-mysql-client/.env
 
