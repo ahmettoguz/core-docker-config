@@ -105,7 +105,14 @@ This project is designed to integrate various microservice technologies, providi
 ### Core Docker Config
 
 + **Docker-Compose Configuration:** Comprehensive Docker-Compose configuration for managing service orchestration.
-+ **Portainer Integration:** Simplified management and visualization of Docker containers and services through the Portainer dashboard.
+
+### Core Portainer
+
++ **Container Management:** Easily manage Docker containers, images, networks, and volumes through a user-friendly web interface.
++ **Multi-Environment Support:** Support to different Docker environments for efficient management.
++ **Stack Deployment:** Deploy and manage Docker stacks using Docker-Compose files directly from the Portainer interface.
++ **Bind Mounts:** Use bind mounts to map host directories into containers for persistent data storage and easy host file access.
++ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 
 ### Core Java Spring Boot Rest Api
 
@@ -117,8 +124,8 @@ This project is designed to integrate various microservice technologies, providi
 + **JWT Authentication:** User authentication and authorization are managed with JSON Web Tokens for secure, stateless sessions.
 + **Exceptions:** The application manages both custom and global exceptions for error handling.
 + **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
-+ **Dockerization:** The application is containerized for consistent deployment and scaling.
 + **Automated & Manual Testing:** Both automated and manual tests implemented for quality assurance.
++ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 
 ### Core Mocha Api Automation Test
 
@@ -128,6 +135,7 @@ This project is designed to integrate various microservice technologies, providi
 - **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
 - **Comprehensive API Testing:** Tests all API endpoints for correctness.
 - **Environment Variables**: Support for environment variables to manage configurations.
++ **Docker Containerization:** The application is containerized for consistent deployment and scaling.
 
 ### Core Database Initializer Alpine MySQL Client
 
@@ -150,7 +158,7 @@ This project is designed to integrate various microservice technologies, providi
 
 <h2 id="releases">🚢 Releases</h2> 
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
 
 <br/>
 
