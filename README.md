@@ -261,18 +261,16 @@ docker compose -p core up -d backend
 docker compose -p core up --build -d backend
 docker compose -p core down backend
 
+docker exec -it core-database-initializer-alpine-mysql-client-container /bin/sh
+docker inspect core-database-initializer-alpine-mysql-client-container
+docker logs core-database-initializer-alpine-mysql-client-container
+docker logs core-java-spring-boot-rest-api-container
+
 docker compose -p core build         portainer
 docker compose -p core up -d         portainer
 docker compose -p core up --build -d portainer
 docker stop                          core-portainer-c
 docker rm                            core-portainer-c
 docker logs -f                       core-portainer-c
+cls
 ```
-
-<br/>
-
-<h2 id="contributors">👥 Contributors</h2> 
-
-<a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a> 
-
-### [🔝](#top)
