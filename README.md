@@ -1,90 +1,17 @@
-<h1 id="top" align="center">Core <br/> Docker Config</h1> 
+<h1 id="top" align="center">🚢 v1.0.0 🚢</h1>
 
 <br>
 
-<div align="center">
-    <img width=700 src="assets/banner/banner.png">
-</div>
-
 ## 🔍 Table of Contents
 
-- [About Project](#intro)
-- [Technologies](#technologies)
+- [Service Versions](#service-versions)
 - [Features](#features)
-- [Releases](#releases)
-- [Dashboards](#dashboards)
 - [System Links](#system-links)
 - [System Preperation](#system-preperation)
 - [System Startup](#system-startup)
-- [Contributors](#contributors)
- 
-<br/>
-
-<h2 id="intro">📌 About Project</h2> 
-
-This project is designed to integrate various microservice technologies, providing a ready-to-use, convenient solution for deployment and management.
 
 <br/>
 
-<h2 id="technologies">☄️ Technologies</h2>
-
-### DevOps
-
-&nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-
-&nbsp; [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white)](https://www.portainer.io/)
-
-### Distribution
-
-&nbsp; [![ALPINE-LINUX](https://img.shields.io/badge/Alpine_Linux-0D597F?style=for-the-badge&logo=alpine-linux&logoColor=white)](https://alpinelinux.org/)
-
-### Build Tools
-
-&nbsp; [![Apache Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
-
-### ORM
-
-&nbsp; [![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)](https://hibernate.org/)
-
-### Database
-
-&nbsp; [![Mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-
-&nbsp; [![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-
-&nbsp; [![PHPMYADMIN](https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white)](https://www.phpmyadmin.net/)
-
-&nbsp; [![pgAdmin](https://img.shields.io/badge/pgadmin-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.pgadmin.org/)
-
-### Security
-
-&nbsp; [![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)](https://jwt.io/)
-
-### Web
-
-&nbsp; [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
-
-&nbsp; [![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
-
-&nbsp; [![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)](https://spring.io/projects/spring-boot)
-
-&nbsp; [![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)](https://tomcat.apache.org/)
-
-&nbsp; [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)](https://swagger.io/)
-
-&nbsp; [![.Env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://www.ibm.com/docs/bg/aix/7.2?topic=files-env-file)
-
-### Test
-
-&nbsp; [![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
-
-&nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
-
-### Report
-
-&nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
-
-<br/>
 
 <h2 id="service-versions">🧩 Service Versions</h2> 
 
@@ -178,31 +105,6 @@ This project is designed to integrate various microservice technologies, providi
 
 <br/>
 
-<h2 id="releases">🚢 Releases</h2> 
-
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-docker-config/tree/v1.0.0)
-
-<br/>
-
-<h2 id="dashboards">🐳 Portainer Dashboard</h2>
-
-Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
-
-<div align="center">
-    <img width=800 src="assets/portainer-dashboard/portainer-dashboard.png">
-</div>
-
-<br/>
-
-<h2>🐘 pgAdmin Dashboard</h2>
-
-pgAdmin provides an intuitive web-based UI for managing PostgreSQL databases, simplifying tasks such as database administration, monitoring, and query execution. It allows users to visualize and manage databases, schemas, tables, and other database objects efficiently.
-
-<div align="center">
-    <img width=800 src="assets/pgadmin-dashboard/pgadmin-dashboard.png">
-</div>
-
-<br/>
 
 <h2 id="system-links">🔗 System Links</h2> 
 
@@ -386,11 +288,3 @@ docker logs -f                       core-portainer-c
 docker exec -it core-backend-c /bin/sh
 docker inspect core-backend-c
 ```
-
-<br/>
-
-<h2 id="contributors">👥 Contributors</h2> 
-
-<a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a> 
-
-### [🔝](#top)
