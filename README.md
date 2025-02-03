@@ -298,18 +298,9 @@ npm i
 
 <br/>
 
-<h3 id="developer-mode">🧪 Developer Mode</h3>
-
 ### Core Java Spring Boot Rest Api
 
 * Modify `application-dev.properties` file for further configurations.
-
-<br/>
-
-<h3 id="production-mode">⚡Production Mode</h3> 
-
-### Core Java Spring Boot Rest Api
-
 * Copy `application-dev.properties` to create `application-prod.properties`. Refer to `production-example.txt` for guidance.
 
 <br/>
