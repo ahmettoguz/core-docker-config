@@ -1,5 +1,15 @@
 services:
 
+  jenkins:
+    build: ../core-jenkins
+    image: core-jenkins-i
+    container_name: core-jenkins-c
+    ports:
+      - 8080:8080
+    volumes:
+      - ../core-jenkins/mount:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
   postgresql:
     build: ../core-postgresql
     image: core-postgresql-i
