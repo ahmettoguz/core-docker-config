@@ -32,6 +32,8 @@ This project is designed to integrate various microservice technologies, providi
 
 &nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
+&nbsp; [![Jenkins](https://img.shields.io/badge/Jenkins-49728B?style=for-the-badge&logo=jenkins&logoColor=white)](https://www.jenkins.io/)
+
 &nbsp; [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=for-the-badge&logo=portainer&logoColor=white)](https://www.portainer.io/)
 
 ### Distribution
@@ -106,6 +108,7 @@ This project is designed to integrate various microservice technologies, providi
 | core-mysql                                         | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-mysql/tree/v1.0.0)                                         |
 | core-phpmyadmin                                    | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-phpmyadmin/tree/v1.0.0)                                    |
 | core-portainer                                     | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-portainer/tree/v1.0.0)                                     |
+| core-jenkins                                       | [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=111727&color=1181A1)](https://github.com/ahmettoguz/core-jenkins/tree/v1.0.0)                                       |
 
 <br/>
 
@@ -114,6 +117,14 @@ This project is designed to integrate various microservice technologies, providi
 ### Core Docker Config
 
 + **Docker-Compose Configuration:** Comprehensive Docker-Compose configuration for managing service orchestration.
+
+### Core Jenkins
+
+- **Docker CLI Integration:** Provides Docker CLI eliminating the need for Docker-in-Docker setups.
+- **Jenkinsfile:** Includes a Jenkinsfile for testing and pipeline configuration.
+- **Persistent Data:** Utilizes bind mounts to persist data on the host machine, preventing data loss during container restarts.
+- **Docker Compose Deployment:** Simplifies deployment with Docker Compose configuration, enabling easy setup and service orchestration without complex commands.
+- **Docker Containerization:** The application is containerized using Docker to ensure consistent deployment, scalability, and isolation across different environments.
 
 ### Core Portainer
 
@@ -184,22 +195,34 @@ This project is designed to integrate various microservice technologies, providi
 
 <br/>
 
-<h2 id="dashboards">🐳 Portainer Dashboard</h2>
+<h2 id="dashboards">🎛️ Dashboards</h2>
 
-Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
+### 👨‍🍳 Jenkins Dashboard
+
+Jenkins provides an intuitive web-based UI to monitor and manage your workflows through the intuitive dashboard.
 
 <div align="center">
-    <img width=800 src="assets/portainer-dashboard/portainer-dashboard.png">
+    <img width=800 src="assets/dashboard/jenkins.png">
 </div>
 
 <br/>
 
-<h2>🐘 pgAdmin Dashboard</h2>
+### 🐳 Portainer Dashboard
+
+Portainer provides an intuitive web-based UI to manage Docker environments, simplifying container orchestration, monitoring, and deployment. It allows users to visualize stacks, containers, networks, volumes, and services.
+
+<div align="center">
+    <img width=800 src="assets/dashboard/portainer.png">
+</div>
+
+<br/>
+
+### 🐘 pgAdmin Dashboard
 
 pgAdmin provides an intuitive web-based UI for managing PostgreSQL databases, simplifying tasks such as database administration, monitoring, and query execution. It allows users to visualize and manage databases, schemas, tables, and other database objects efficiently.
 
 <div align="center">
-    <img width=800 src="assets/pgadmin-dashboard/pgadmin-dashboard.png">
+    <img width=800 src="assets/dashboard/pgadmin.png">
 </div>
 
 <br/>
@@ -228,6 +251,7 @@ git clone https://github.com/ahmettoguz/core-pgadmin
 git clone https://github.com/ahmettoguz/core-mysql
 git clone https://github.com/ahmettoguz/core-phpmyadmin
 git clone https://github.com/ahmettoguz/core-portainer
+git clone https://github.com/ahmettoguz/core-jenkins
 ```
 
 <br/>
@@ -381,10 +405,21 @@ docker rm                            core-portainer-c
 docker logs -f                       core-portainer-c
 ```
 
+### Jenkins
+```
+docker compose -p core build         jenkins
+docker compose -p core up -d         jenkins
+docker compose -p core up --build -d jenkins
+docker stop                          core-jenkins-c
+docker rm                            core-jenkins-c
+docker logs -f                       core-jenkins-c
+```
+
 ### Monitor & Inspect
 ```
-docker exec -it core-backend-c /bin/sh
-docker inspect core-backend-c
+docker exec -it -u root core-jenkins-c /bin/sh
+docker exec -it core-jenkins-c /bin/sh
+docker inspect core-jenkins-c
 ```
 
 <br/>
