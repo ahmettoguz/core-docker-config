@@ -296,8 +296,6 @@ npm i
 * Modify the `.env` file using `.env.example` as a reference.
 * Replace the `init.sql` file with your custom SQL script to initialize the database schema and seed data.
 
-<br/>
-
 ### Core Java Spring Boot Rest Api
 
 * Modify `application-dev.properties` file for further configurations.
